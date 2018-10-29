@@ -63,9 +63,11 @@ Vagrant.configure(2) do |config|
     make base
 
 
-     rm /home/vagrant/.xmonad/xmonad.hs
-     ln -s /vagrant/xmonad.sh /home/vagrant/.xmonad/xmonad.hs
-     xmonad --recompile
+    rm /home/vagrant/.xmonad/xmonad.hs
+
+    ln -s /vagrant/xmonad.sh /home/vagrant/.xmonad/xmonad.hs
+
+    xmonad --recompile
 
 
 
